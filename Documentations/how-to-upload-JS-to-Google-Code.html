@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>How To Upload Javascript To Google Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description">
+    <meta name="author" content="Autor">
+	
+	<style type="text/css">
+    /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,body,div,span,
+applet,object,iframe,
+h1,h2,h3,h4,h5,h6,
+p,blockquote,pre,
+a,abbr,acronym,address,
+big,cite,code,del,dfn,
+em,img,ins,kbd,q,
+s,samp,small,strike,strong,
+sub,sup,tt,
+var,b,u,i,center,
+dl,dt,dd,
+ol,ul,li,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td,
+article,aside,canvas,details,embed,
+figure,figcaption,
+footer,header,hgroup,menu,nav,
+output,ruby,
+section,summary,
+time,mark,audio,video {
+  margin:0;
+  padding:0;
+  border:0;
+  font-size:100%;
+  font:inherit;
+  vertical-align:baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,aside,details,
+figcaption,figure,footer,
+header,hgroup,menu,nav,section {
+  display:block;
+}
+
+body {
+  line-height:1;
+}
+
+ol,ul {
+  list-style:none;
+}
+
+blockquote,q {
+  quotes:none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content:'';
+  content:none;
+}
+
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+
+/* ===============
+   FRAMEWORK START
+   =============== */
+body {
+  font:normal normal .8125em/1.4 Arial,Sans-Serif;
+  background-color:white;
+  color:#333;
+}
+
+strong,b {
+  font-weight:bold;
+}
+
+cite,em,i {
+  font-style:italic;
+}
+
+a {
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+a img {
+  border:none;
+}
+
+abbr,
+acronym {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+sup,
+sub {
+  vertical-align:baseline;
+  position:relative;
+  top:-.4em;
+  font-size:86%;
+}
+
+sub {
+  top:.4em;
+}
+
+small {
+  font-size:86%;
+}
+
+kbd {
+  font-size:80%;
+  border:1px solid #999;
+  padding:2px 5px;
+  border-bottom-width:2px;
+  border-radius:3px;
+}
+
+mark {
+  background-color:#ffce00;
+  color:black;
+}
+
+p,blockquote,pre,
+table,figure,hr,form,
+ol,ul,dl {
+  margin:1.5em 0;
+}
+
+hr {
+  height:1px;
+  border:none;
+  background-color:#666;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight:bold;
+  line-height:normal;
+  margin:1.5em 0 0;
+}
+
+h1 {font-size:200%}
+h2 {font-size:180%}
+h3 {font-size:160%}
+h4 {font-size:140%}
+h5 {font-size:120%}
+h6 {font-size:100%}
+
+ol,ul,dl {margin-left:3em}
+ol {list-style:decimal outside}
+ul {list-style:disc outside}
+li {margin:.5em 0}
+
+dt {font-weight:bold}
+dd {margin:0 0 .5em 2em}
+
+input,
+button,
+select,
+textarea {
+  font:inherit;
+  font-size:100%;
+  line-height:normal;
+  vertical-align:baseline;
+}
+
+textarea {
+  display:block;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+pre,
+code {
+  font-family:"Courier New",Courier,Monospace;
+  color:inherit;
+}
+
+pre {
+  white-space:pre;
+  word-wrap:normal;
+  overflow:auto;
+}
+
+blockquote {
+  margin-left:2em;
+  margin-right:2em;
+  border-left:4px solid #ccc;
+  padding-left:1em;
+  font-style:italic;
+}
+#outer-wrap {
+width: 90%;
+margin: 0 auto;
+}
+#header {
+background-color: #E6E6E6;
+padding: 20px 15px;
+text-align: center;
+margin: 10px 0;
+border-radius: 5px;
+border: 1px solid #CFCFCF;
+}
+#header h1 {
+margin: 0;
+}
+#content-wrap {
+border: 1px solid #CFCFCF;
+padding: 10px;
+border-radius: 5px;
+font-size: 14px;
+}
+#content-wrap .area {
+background-color: #F3F3F3;
+padding: 10px 15px;
+margin:10px 0;
+}
+#content-wrap .area h2 {
+margin: 0 0 10px;
+}
+#content-wrap figure {
+padding: 20px;
+background-color: #DCE9EE;
+border: 1px solid #BEBEBE;
+text-align: center;
+}
+#content-wrap .area pre {
+padding: 10px;
+border: 1px solid #D5D5D5;
+font-size: 12px;
+background-color: #FFF;
+}
+#content-wrap .area a {
+font-style: italic;
+}
+p.note {
+padding: 10px;
+background-color: #E0FCD1;
+border: 1px solid #86D561;
+}
+#content-wrap img {
+max-width: 100%;
+}
+#content-wrap textarea {
+width: 100% !important;
+font-size: 12px;
+min-height: 1220px;
+padding: 10px;
+}
+#content-wrap .credit {
+text-align: center;
+margin: 15px 0 0;
+padding: 5px;
+font-size: 12px;
+}
+    </style>
+	</head>
+	
+	<body>
+	<div id="outer-wrap">
+	<div id="header">
+	<h1>How To Upload Javascript to Google Code</h1>
+	</div>
+	<div id="content-wrap">
+	<p>The following is the recommended way by google if you want to storing Javascript files in google code</p>
+	<div class="area">
+	<h2>Installing TortoiseSVN</h2>
+	<p>Visit this site <a href="http://tortoisesvn.net/downloads.html">http://tortoisesvn.net/downloads.html</a>. Download and install the application. Once installed, the computer must be restarted for this application will be integrated with the context menu / right click menu (shell command).<br/>
+    Then right-click on the desktop. Select the TortoiseSVN -> Settings:</p>	
+	<figure><img src="img/tortoise-svn_settings(1).png"/></figure>
+	<p>Dialog box will appear like this. Click on General and click the Edit button:</p>
+	<figure><img src="img/tortoise-svn_edit-mime-type.png"/></figure>
+	<p>Once the config file is open, copy this code and place it under comment <strong># Makefile = svn:eol-style=native</strong></p>	
+	<textarea onclick="this.focus();this.select()">[miscellany]
+enable-auto-props = yes
+
+[auto-props]
+# Scriptish formats
+*.bat        = svn:eol-style=native; svn:keywords=Id; svn-mine-type=text/plain
+*.bsh        = svn:eol-style=native; svn:keywords=Id; svn:mime-type=text/x-beanshell
+*.cgi        = svn:eol-style=native; svn:keywords=Id; svn-mine-type=text/plain
+*.cmd        = svn:eol-style=native; svn:keywords=Id; svn-mine-type=text/plain
+*.js         = svn:eol-style=native; svn:keywords=Id; svn:mime-type=text/javascript
+*.php        = svn:eol-style=native; svn:keywords=Id Rev Date; svn:mime-type=text/x-php
+*.pl         = svn:eol-style=native; svn:keywords=Id; svn:mime-type=text/x-perl; svn:executable
+*.pm         = svn:eol-style=native; svn:keywords=Id; svn:mime-type=text/x-perl
+*.py         = svn:eol-style=native; svn:keywords=Id; svn:mime-type=text/x-python; svn:executable
+*.sh         = svn:eol-style=native; svn:keywords=Id; svn:mime-type=text/x-sh; svn:executable
+
+# Image formats
+*.bmp        = svn:mime-type=image/bmp
+*.gif        = svn:mime-type=image/gif
+*.ico        = svn:mime-type=image/ico
+*.jpeg       = svn:mime-type=image/jpeg
+*.jpg        = svn:mime-type=image/jpeg
+*.png        = svn:mime-type=image/png
+*.tif        = svn:mime-type=image/tiff
+*.tiff       = svn:mime-type=image/tiff
+
+# Data formats
+*.pdf        = svn:mime-type=application/pdf
+*.avi        = svn:mime-type=video/avi
+*.doc        = svn:mime-type=application/msword
+*.eps        = svn:mime-type=application/postscript
+*.gz         = svn:mime-type=application/gzip
+*.mov        = svn:mime-type=video/quicktime
+*.mp3        = svn:mime-type=audio/mpeg
+*.ppt        = svn:mime-type=application/vnd.ms-powerpoint
+*.ps         = svn:mime-type=application/postscript
+*.psd        = svn:mime-type=application/photoshop
+*.rtf        = svn:mime-type=text/rtf
+*.swf        = svn:mime-type=application/x-shockwave-flash
+*.tgz        = svn:mime-type=application/gzip
+*.wav        = svn:mime-type=audio/wav
+*.xls        = svn:mime-type=application/vnd.ms-excel
+*.zip        = svn:mime-type=application/zip
+
+# Text formats
+.htaccess    = svn:mime-type=text/plain
+*.css        = svn:mime-type=text/css
+*.dtd        = svn:mime-type=text/xml
+*.html       = svn:mime-type=text/html
+*.ini        = svn:mime-type=text/plain
+*.sql        = svn:mime-type=text/x-sql
+*.txt        = svn:mime-type=text/plain
+*.xhtml      = svn:mime-type=text/xhtml+xml
+*.xml        = svn:mime-type=text/xml
+*.xsd        = svn:mime-type=text/xml
+*.xsl        = svn:mime-type=text/xml
+*.xslt       = svn:mime-type=text/xml
+*.xul        = svn:mime-type=text/xul
+*.yml        = svn:mime-type=text/plain
+CHANGES      = svn:mime-type=text/plain
+COPYING      = svn:mime-type=text/plain
+INSTALL      = svn:mime-type=text/plain
+Makefile*    = svn:mime-type=text/plain
+README       = svn:mime-type=text/plain
+TODO         = svn:mime-type=text/plain
+
+# Code formats
+*.c          = svn:eol-style=native; svn:keywords=Id; svn:mime-type=text/plain
+*.cpp        = svn:eol-style=native; svn:keywords=Id; svn:mime-type=text/plain
+*.h          = svn:eol-style=native; svn:keywords=Id; svn:mime-type=text/plain
+*.java       = svn:eol-style=native; svn:keywords=Id; svn:mime-type=text/plain
+*.as         = svn:eol-style=native; svn:keywords=Id; svn:mime-type=text/plain
+*.mxml       = svn:eol-style=native; svn:keywords=Id; svn:mime-type=text/plain
+
+# Webfonts
+*.eot        = svn:mime-type=application/vnd.ms-fontobject
+*.woff       = svn:mime-type=application/x-font-woff
+*.ttf        = svn:mime-type=application/x-font-truetype
+*.svg        = svn:mime-type=image/svg+xml</textarea>
+<p>Save the changes you did. Allow up here first</p>
+	</div>
+	<div class="area">
+	<h2>Creating a New Project Page</h2>
+	<p>If you do not have a Google account, created first in order to get access to Google Code. Visit <a href="http://code.google.com">http://code.google.com</a>, and then click <a href="https://code.google.com/hosting/createProject">Create A New Project</a>:</p>
+	<figure><img src="img/google-code_create-a-new-project.png"/></figure>
+	<p>Fill out the form, adjust options <strong>version control system </strong> to <strong>Subversion</strong>, and select the license that you wish to upload files there:</p>
+	<figure><img src="img/google-code_filling-the-project-form.png"/></figure>
+	<p>Click <strong>Create Project</strong>. You'll be taken to your new project dashboard page if it is successful. Click the <strong>Source</strong> tab and then click the link to create a password <a href="https://code.google.com/hosting/settings">googlecode.com password</a>. It is used to connect the application with your Google project:</p>
+	<figure><img src="img/google-code_generate-password.png"/></figure>
+	<p>Record the password that appears:</p>
+	<figure><img src="img/google-code_generating-password.png"/></figure>
+	</div>
+	<div class="area">
+	<h2>Start Uploading</h2>
+	<p>Open the TortoiseSVN application by right clicking on the desktop and select <strong>TortoiseSVN</strong> » <strong>Repo Browser</strong>:</p>
+	<figure><img src="img/tortoise-svn_repo-browser.png"/></figure>
+	<p>Will display a dialog box to enter the URL of the project:</p>
+	<figure><img src="img/tortoise-svn_input-project-url-with-https.png"/></figure>
+	<p>URL pattern is always shaped like this:</p>
+	<pre>https://project_name.googlecode.com/svn/trunk/</pre>
+	<p class="note">To be remembered and most often made ​​failed in file upload: When writing the URL in the application project, using <strong>https</strong>, but when you want to see the results or access their work online, use the <strong>http</strong></p>
+	<p>Click OK. Wait until the loading process is complete.</p>
+	<p>Open the folder where you want to upload the file there. Drag the file you want to upload the file list area:</p>
+	<figure><img src="img/tortoise-svn_uploading.png"/></figure>
+	<p>Wait a moment, you will be prompted to authenticate your Google account code like this:</p>
+	<figure><img src="img/tortoise-svn_authentication.png"/></figure>
+	<p>Fill your email address and password that you've previously recorded. check the <strong>Save authentication</strong> so that we do not need to repeatedly log in when uploading files in the future.</p>
+	<p>If the file is successfully uploaded it will look like the following.</p>
+	<figure><img src="img/hasilupload.png"/></figure>
+	<p>Click on the name of the file that has been uploaded (1)</p>
+	<p>Copy the link on the address bar (2) and then replace the main Javascript link of the theme</p>
+	</div>
+	<div class="credit"> Thanks to Taufik Nurrohman for great Article : <a href="http://www.dte.web.id/2013/02/hosting-file-dengan-google-code-dan.html">Hosting File dengan Google Code dan TortoiseSVN</a></div>
+	</div>
+	
+	
+	</div>
+	</body>
+	
+
+	
+	
+</html>
+	

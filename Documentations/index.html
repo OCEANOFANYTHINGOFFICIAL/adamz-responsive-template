@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Adamz Responsive Blogger Template Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description">
+    <meta name="author" content="Autor">
+    
+    <!-- loading the css -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <style type="text/css">
+    body {
+        padding-bottom: 40px;
+    }
+
+    section {padding: 60px 0 0 0;}
+    </style>
+
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+          <![endif]-->
+
+          <!-- Various Icons (Favicon, Touch Icon,... -->
+          <link rel="shortcut icon" href="assets/img/favicon.ico">
+          <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+          <link rel="apple-touch-icon" sizes="72x72" href="assets/img/apple-touch-icon-72x72.png">
+          <link rel="apple-touch-icon" sizes="114x114" href="assets/img/apple-touch-icon-114x114.png">
+
+      </head>
+
+
+
+      <body data-spy="scroll" data-target=".navbar" id="top">
+
+        <!-- ========================= NAVIGATION BAR >> START ========================= -->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+                    <a class="brand" href="#overview">Adamz Documentation</a><!-- TIP: Change this for the name of your file -->
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="#overview">Overview</a></li>
+
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="drop1">Getting started<b class="caret"></b></a>
+                                <ul aria-labelledby="drop1" role="menu" class="dropdown-menu">
+                                    <li><a href="#getting_started">Getting Started</a></li>
+                                        <li><a href="#getting_started_installation">Installation</a></li>
+                                            <li><a href="#getting_started_activating_theme_options">Default Setting</a></li>
+                                <li><a href="#getting_started_importing_demo_contet">Layout Explain</a></li>                            
+                                        <li><a href="#getting_started_setting_up_the_menu">Setting up the menu</a></li>
+										<li><a href="#getting_started_setting_up_the_secial_icon">Setting Social Icon</a></li>									
+                                            </ul>
+
+                                        </li> 
+                                <li class="dropdown">
+                                    <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="drop2" href="#creating_content_post_pages_and_portfolio">Creating Content<b class="caret"></b></a>
+                                    <ul aria-labelledby="drop2" role="menu" class="dropdown-menu">                                       
+                                            <li><a href="#creating_content_post_pages_and_portfolio_pages">Auto Featured Post</a></li> 
+											<li><a href="#creating_content_manual_slide">Manual Featured Post</a></li>
+											<li><a href="#creating_error_pages">Error Page</a></li>																			
+											
+                                                </ul>
+                                            </li>
+                                 <li class="dropdown">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="drop3" href="#shortcodes_widgets">Widget Setting<b class="caret"></b></a>
+                                    <ul  aria-labelledby="drop3" role="menu" class="dropdown-menu">
+										<li><a href="#sumloadmore">Summary and Load More</a></li>
+										<li><a href="#pagenavi">Page Navigation</a></li>										
+                                        <li><a href="#recentcommentwidgets">Recent Comments</a></li>
+                                            <li><a href="#jsonresultwidget">JSON Search result</a></li>
+                                                <li><a href="#emoticon">Emoticon</a></li>
+												<li><a href="#newsticker">News Ticker</a></li>												
+                                                </ul>
+                                            </li>
+                                                        <li class="dropdown">
+                                                            <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="drop3" href="#shortcodes_widgets">Customization<b class="caret"></b></a>
+                                                            <ul aria-labelledby="drop3" role="menu" class="dropdown-menu">                                                                
+                                                                <li><a href="#theme_customizer">Theme Customizer</a></li>                                                              
+                                                            </ul>
+                                                        </li>
+
+
+
+
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- ========================= NAVIGATION BAR >> END ========================= -->
+
+
+
+                                                            <!-- ========================= MAIN CONTAINER >> START ========================= -->
+                                                            <div class="container">
+
+                                                                <!-- ========================= SECTION: OVERVIEW >> START ========================= -->
+                                                                <section id="overview">
+
+                                                                    <div class="hero-unit">
+                                                                        <h1>Adamz Blogger Documentation</h1>
+                                                                        <p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a target="_blank" href="http://themeforest.net/user/satankmkr">here</a>. Thanks so much! </p>
+                                                                        <div class="row-fluid">
+                                                                            <div class="span3"><a target="_blank" href="http://themeforest.net/user/satankmkr" class="btn btn-inverse btn-large btn-block">Contact Form</a></div>
+                                                                            <div class="span3"><a href="#changelog" role="button" class="btn btn-success btn-large btn-block" data-toggle="modal">Changelog</a></div>
+                                                                            <div class="span3"><a href="#credits" role="button" class="btn btn-info btn-large btn-block" data-toggle="modal">Credits</a></div>
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <hr>
+
+                                                                    <div class="row-fluid">
+                                                                        <div class="span6">
+                                                                            <table width="100%">
+                                                                                <tr>
+                                                                                    <td>Author:</td>
+                                                                                    <td><a href="http://themeforest.net/user/satankmkr/">satankmkr</a></td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Demo :</td>
+                                                                                    <td><a href="http://adamz-satankmkr.blogspot.com/">Adamz Demo Page</a></td>
+                                                                                </tr>																				
+                                                                            </table>
+                                                                        </div>
+                                                                        
+                                                             
+                                                                        <div class="span6">
+                                                                            <table width="100%">
+                                                                                <tr>
+                                                                                    <td>Created:</td>
+                                                                                    <td>2013-05-22</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Modified:</td>
+                                                                                    <td>2013-05-22</td>
+                                                                                </tr>
+                                                                                 <tr>
+                                                                                    <td>Current Version:</td>
+                                                                                    <td>1.0</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>Documentation Version</td>
+                                                                                    <td>1.0</td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <hr>
+
+                                                                </section>
+                                                                <!-- ========================= SECTION: OVERVIEW >> END ========================= -->
+
+
+
+                                                                <!-- ========================= SECTION: MARKUP >> START ========================= -->
+                                                                <section id="getting_started">
+                                                                    <div class="page-header">
+                                                                        <h1>Getting started</h1>
+                                                                    </div>
+
+                                                                    <p>I assume you have a blogger account, so let&#39;s get started!</p>
+                                                                    <hr />
+
+                                                                    <h3 id="getting_started_installation">Installation</h3>
+                                                                    <p>
+                                                                        You can do it by follow this step:
+                                                                    </p> <div class="row">																	
+                                                                    <ol>
+                                                                        <li>
+                                                                            Unzip the <strong>&ldquo;Adamz-theme.zip&rdquo;</strong> file.
+                                                                        </li>
+                                                                        <li>
+                                                                            On Blogger Dashboard Click <strong class="template">Template</strong>.
+                                                                        </li>
+																		<li>
+                                                                            Click <strong class="buttonx">Backup/Restore</strong> button (Top Right).
+                                                                        </li>
+																		<li>
+                                                                            Click <strong class="choose">Choose File</strong> button. Find where the <strong>&ldquo;Adamz-theme.xml&rdquo;</strong> file location.
+                                                                        </li>
+																		<li>
+                                                                            Then Click <strong class="buttonorg">Upload</strong>.
+                                                                        </li><br/><br/>																		
+                                                                    </ol>
+																	<p><span style="color:red;font-weight:bold">NB: Before Uploading This Template Mobile Blogger Template Must Enable to make Blogger Customize Work</span></p><br/>
+																	<p><img class="img-polaroid" src="assets/install.jpg" /> </p>
+                                                                    </div>
+
+
+                                                                    <hr />
+                                                                    <div class="row">
+                                                                       
+                                                                            <div class="page-header"><h3 id="getting_started_activating_theme_options">Default Setting</h3></div>
+                                                                            <p>
+                                                                                After installing the theme, this it the minimun setting to make all widget works fine in this themes.
+                                                                            </p>
+
+                                                                        <div class="span3"><p><h4>Embedded Comment</h4>
+																		This to make comment area like the Demo and make Emoticon show
+																		<ol><li>On Blogger Dashboard Click <strong class="setting">Setting</strong>.</li>
+																		<li>Click <strong class="orange">Posts and Comments</strong></li>
+																		<li>in Comment Location Choose <strong class="buttonx">Embedded</strong></li>
+																		<li>Then Click <strong class="buttonorg">Save settings</strong>.</li>
+																		</ol></p></div>
+                                                                        <div class="span9"><p><img class="img-polaroid" src="assets/comment.jpg" /></p></div>
+																		<div class="span3"><p><h4>Blog Feed</h4> 
+																		This to make recent comment, Search Result, Featured Post, Related Post, and News Ticker work fine
+																		<ol><li>On Blogger Dashboard Click <strong class="setting">Setting</strong>.</li>
+																		<li>Click <strong class="orange">Other</strong></li>
+																		<li>in Site Feed <i class=" icon-chevron-right"></i> Allow Blog Feed Choose <strong class="buttonx">Full</strong> Or <strong class="buttonx">Short</strong> </li>
+																		<li>Then Click <strong class="buttonorg">Save settings</strong>.</li>
+																		</ol></p></div>
+                                                                        <div class="span9"><p><img class="img-polaroid" src="assets/other.jpg" /></p></div>
+                                                                    </div>
+																	<div class="row">
+                                                                    <div class="page-header"><h3 id="getting_started_importing_demo_contet">Layout Explain</h3></div>
+                                                                        <div class="span3">
+																		<ol>
+																		<li>Right Header Widget Area(Ads 468x60)</li>
+																		<li>Manual Slideshow Area (Add Image Widget)</li>
+																		<li>Auto Featured Post Area</li>
+																		<li>Top Sidebar Area</li>
+																		<li>Middle Sidebar Area<br/>
+																		a. Popular Post<br/>
+																		b. Recent Comment <br/>
+																		c. Archive Widget</li>	
+																		<li>Bottom Sidebar Area</li>																		
+																		<li>Footer Widget Area</li>																		
+																		</ol>
+																		</div>
+																		 <div class="span9">
+																		 <p><img class="img-polaroid" src="assets/adamzlayouts.png" /></p>
+																		 </div>
+																		</div>
+                              
+                    <div class="page-header"><h3 id="getting_started_setting_up_the_menu">Setting up the menu</h3></div>
+					<img src="assets/Adamzmenu.png" class="img-polaroid"/><br/><br/>
+                        <p>
+                            To Edit Menu in this theme you can follow this step:
+                        </p>
+						 <div class="row">				
+						 <ol>
+						 <li>On Blogger Dashbord Click <strong class="template">Template</strong></li>
+						 <li>Click <strong class="buttonx">Edit HTML</strong></li>
+						 <li>Scroll down and Find this Code :<br/><br/>
+						  <pre class="prettyprint html">&lt;ul class=&#39;sf-menu&#39; id=&#39;menunav&#39;&gt;
+  &lt;li&gt;&lt;a class=&#39;home&#39; expr:href=&#39;data:blog.homepageUrl&#39;&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#39;#&#39;&gt;About&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Archive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Comments&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#39;#&#39;&gt;With Sub Menu&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Sub Menu&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Sub Sub Menu&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Sub Menu&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Sub Menu&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Sub Menu&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Sub Menu&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Sub Menu&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Sub Menu&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&#39;#&#39;&gt;Error 404&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+						 </li>
+						 <li>Change # with yours URL link</li>
+						 </ol>	                                                    
+      					
+						</div>               
+ <div class="page-header"><h3 id="getting_started_setting_up_the_secial_icon">Setting Social Icon</h3></div>
+ <img src="assets/Adamzicon.png" class="img-polaroid"/><br/><br/>
+                        <p>
+                            To Edit Social Icon in this theme you can follow this step:
+                        </p>
+						 <div class="row">				
+						 <ol>
+						 <li>On Blogger Dashbord Click <strong class="template">Template</strong></li>
+						 <li>Click <strong class="buttonx">Edit HTML</strong></li>
+						 <li>Scroll down and Find this Code :<br/><br/>
+						  <pre class="prettyprint html">&lt;ul&gt;
+  &lt;li&gt;&lt;a class=&#39;fbx&#39; href=&#39;#&#39; title=&#39;Facebook&#39;&gt;facebook&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&#39;twix&#39; href=&#39;#&#39; title=&#39;Twitter&#39;&gt;twitter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&#39;goex&#39; href=&#39;#&#39; title=&#39;Google+&#39;&gt;Google+&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&#39;linx&#39; href=&#39;#&#39; title=&#39;Linkedin&#39;&gt;Linkedin&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&#39;pinx&#39; href=&#39;#&#39; title=&#39;Pinterest&#39;&gt;Pinterest&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&#39;drix&#39; href=&#39;#&#39; title=&#39;Dribble&#39;&gt;Dribble&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&#39;vmex&#39; href=&#39;#&#39; title=&#39;Vimeo&#39;&gt;Vimeo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&#39;rssx&#39; href=&#39;#&#39; title=&#39;RSS&#39;&gt;RSS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+						 </li>
+						 <li>Change # with yours Social URL link</li>
+						 </ol>	                                                    
+      					
+						</div>
+ 
+
+              </section>
+              <!-- ========================= SECTION: MARKUP >> END ========================= -->
+
+
+              <section id="creating_content_post_pages_and_portfolio">
+                <div class="page-header">
+                    <h1>Creating Content<small> Featured Post and Error Page</small></h1>
+                </div> <div class="page-header">
+                        <h3 id="creating_content_post_pages_and_portfolio_pages">Auto Featured Post (Random, Recent, Random by Label or Recent by Label)</h3>
+                    </div>
+					<div class="row"> 					
+					<div class="span5">
+                    To add Auto Featured Post widget follow this step<br/> 
+                                <ol>
+                                    <li>on Dashbord Blogger Click <strong class="layout">Layout</strong></li>
+                                    <li>On Auto Featured Post Area Click <span class="addgadget">Add a Gadget</span></li>
+                                    <li>Choose HTML/Javascript</li>
+									<li>Copy this Code:<br/><br/>
+									<pre class="prettyprint html">&lt;div id=&quot;featpost&quot;&gt;&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+featuredPostSlide({
+idcontaint:&quot;#featpost&quot;,
+MaxPost:5
+});
+&lt;/script&gt;</pre>
+									</li>
+									<li>Click <strong class="buttonorg">Save</strong></li>
+                                </ol>								
+</div>
+					<div class="span7">
+					<img class="img-polaroid" src="assets/Adamzautofeature.png"/>
+					</div>
+					</div>
+					<div class="row"> 
+<p>(Default) Complete Javascript to call Featured Post like this code:
+								<pre class="prettyprint html">featuredPostSlide({
+blogURL: &quot;&quot;,
+MaxPost: 4,
+idcontaint: &quot;&quot;,			
+ImageSize: 500,			
+Summarylength: 150,					
+RandompostActive: true,			
+pBlank: &quot;http://1.bp.blogspot.com/-htG7vy9vIAA/Tp0KrMUdoWI/AAAAAAAABAU/e7XkFtErqsU/s72-c/grey.gif&quot;,
+tagName: false
+});</pre></p>					
+					<table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Property</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+										<tr>
+                                            <td>blogURL</td>
+                                            <td>Yours blog URL or you can leave it blank to load where this script load.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MaxPost</td>
+                                            <td>Maximum number artikel will show on Featured Post</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Summarylength</td>
+                                            <td>Number of summary characters to show.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>idcontaint</td>
+                                            <td>ID of div where the Featured Post will be display must add this #, Example: if want to show in &lt;div id=&quot;featpost&quot;&gt;&lt;/div&gt; write like this &quot;#featpost&quot;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ImageSize</td>
+                                            <td>Post Image size (in pixel)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>RandompostActive</td>
+                                            <td>default <i>true</i>. It's will show article ramdomly. If want to show Recent Post just change to <i>false</i> </td>
+                                        </tr>                                        
+                                        <tr>
+                                            <td>pBlank</td>
+                                            <td>Backup image if post don't have image store on blogspot or picasa web</td>
+                                        </tr>                                       
+                                        <tr>
+                                            <td>tagName</td>
+                                            <td>If you want to show Featured Post by the Label. Example: to show featured post from <i>Sports</i> Label just write like this <i>tagName:&quot;Sports&quot;</i></td>
+                                        </tr>                                      
+                                    </tbody>
+                                </table> 
+				
+				</div>
+				 <div class="page-header">
+                        <h3 id="creating_content_manual_slide">Manual Slide Show (Using Image Widget)</h3>
+                    </div>
+					<div class="row"> 					
+					<div class="span5"><h4>Manual Slide Show</h4>
+                    To Create Manual Slide Show follow this step<br/> 
+                                <ol>
+                                    <li>on Dashbord Blogger Click <strong class="layout">Layout</strong></li>
+                                    <li>On Manual Slideshow Widget Area Click <span class="addgadget">Add a Gadget</span></li>
+                                    <li>Choose Image Widget</li>
+									<li><img src="assets/imagewidget.png"/><br/><br/>
+									<ol>
+									<li>Fill With Image Title</li>
+									<li>Image Description</li>
+									<li>Link When Image or Title Click</li>
+									<li>Search Yours Image</li>
+									<li>Uncheck shrink to fit</li>
+									</ol><br/><br/>
+									<strong>NB</strong> : Recommended Image Size 750px x 350px<br/>
+									</li>
+									<li>Click <strong class="buttonorg">Save</strong></li>									
+                                <li>If You Whan Show 5 image, do this step 5 Time</li>
+								</ol>								
+</div>
+					<div class="span7">
+					<img class="img-polaroid" src="assets/AdamzManualSlide.png"/>
+					</div>
+					</div>
+					<hr/>					
+					<div class="creating_error_pages"><h2 id="creating_error_pages">Error Page</h2></div>
+					<hr/>
+                        <div class="row">
+						<div style="text-align:center">
+						<img src="assets/adamzerror404.png" class="img-polaroid"/></div>
+						<br/><br/>
+						<p>To change text on Error Page follow this step</p>
+                            <ol>
+						 <li>On Blogger Dashbord Click <strong class="template">Template</strong></li>
+						 <li>Click <strong class="buttonx">Edit HTML</strong></li>
+						 <li>Scroll down and Find this Code :<br/><br/>
+						  <pre class="prettyprint html">&lt;div class=&#39;error-custom&#39;&gt;
+
+&lt;h2&gt;404 Not Found&lt;/h2&gt;
+&lt;p class=&#39;error-body&#39;&gt;We&amp;#39;re sorry but we could not find the page you are looking for.&lt;br/&gt;
+This may happen if you have entered site url incorrectly or this page doesn&amp;#39;t exist anymore.&lt;/p&gt;
+
+&lt;p&gt;You can try searching page again or go back to home&lt;/p&gt;
+
+&lt;form action=&#39;/search&#39; id=&#39;searchform&#39; method=&#39;get&#39;&gt;
+&lt;input id=&#39;s&#39; name=&#39;q&#39; onblur=&#39;if (this.value == &amp;quot;&amp;quot;) {this.value = &amp;quot;Search...&amp;quot;;}&#39; onfocus=&#39;if (this.value == &amp;quot;Search...&amp;quot;) {this.value = &amp;quot;&amp;quot;;}&#39; type=&#39;text&#39; value=&#39;Search...&#39;/&gt;
+&lt;input id=&#39;searchsubmit&#39; type=&#39;submit&#39; value=&#39;Go&#39;/&gt;
+&lt;/form&gt;
+
+&lt;/div&gt;</pre>
+						 </li>
+						 <li>Change which your's Language</li>
+						 </ol>	
+                       </div>				
+                </section>
+                <section id="shortcodes_widgets">
+                    <div class="page-header">
+                        <h1 id="shortcodes">Widgets<small> Configuration</small></h1>
+                    </div>
+					<div class="page-header"><h2 id="sumloadmore">Summary and Load More</h2></div>
+					                        <div class="row"><h3>Summary and Load More</h3>
+						<div class="span6">
+                                <img class="img-polaroid" src="assets/Summary.png" /><br/><br/>								
+<p>								 
+                           
+								
+ <h5>(Default) Complete Javascript to setup Load More Post like this code: </h5>
+						 <pre class="prettyprint js">loadMorePost({
+thumbnailSize:200,
+summaryLength:300,
+MoreText:&quot;Load more posts&quot;,
+BackupImage:&quot;http://1.bp.blogspot.com/-htG7vy9vIAA/Tp0KrMUdoWI/AAAAAAAABAU/e7XkFtErqsU/s72-c/grey.gif&quot;
+});</pre>
+<table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Property</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+									 <tr>
+                                            <td>thumbnailSize</td>
+                                            <td>Define the post thumbnail size</td>
+                                        </tr>
+										 <tr>
+                                            <td>summaryLength</td>
+                                            <td>Define the summary length</td>
+                                        </tr>
+										 <tr>
+                                            <td>MoreText</td>
+                                            <td>Load more text to display: default: &quot;Load more posts&quot;</td>
+                                        </tr>                                        										
+                                     <tr>
+                                            <td>BackupImage</td>
+                                            <td>Backup image if post don't have image store on blogspot or picasa web.</td>
+                                        </tr> 
+                                    </tbody>
+                                </table>
+	</p>						
+							</div>
+                            <div class="span6"><h4>Summary</h4>
+							To change image size and Summary length follow this step.
+                                <ol>
+                                  <li>On Blogger Dashbord Click <strong class="template">Template</strong></li>
+						 <li>Click <strong class="buttonx">Edit HTML</strong></li>
+						 <li>Scroll down and Find this Code :<br/><br/>
+						 <pre class="prettyprint html">var configSummary = {
+    thumbnailSize: 200, // Define the post thumbnail size
+    summaryLength: 300, // Define the summary length  
+	BackupImage: 'http://1.bp.blogspot.com/-htG7vy9vIAA/Tp0KrMUdoWI/AAAAAAAABAU/e7XkFtErqsU/s72-c/grey.gif' // Backup image if post don't have image   
+};</pre>
+	<table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Property</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>thumbnailSize</td>
+                                            <td>Define the post thumbnail size</td>
+                                        </tr>
+                                        <tr>
+                                            <td>summaryLength</td>
+                                            <td>Define the summary length</td>
+                                        </tr>                                     
+                                      <tr>
+                                            <td>BackupImage</td>
+                                            <td>URL Backup image if post don't have image</td>
+                                        </tr>  
+                                    </tbody>
+                                </table> 					 
+                                    </li>
+                                </ol>
+								<h4>Load More Post (Home Page)</h4>
+								To edit Load More Text, change image size and Summary length follow this step.
+                                 <ol>
+                                  <li>On Blogger Dashbord Click <strong class="template">Template</strong></li>
+						 <li>Click <strong class="buttonx">Edit HTML</strong></li>
+						 <li>Scroll down and Find this Code :<br/><br/>
+						 <pre class="prettyprint js">loadMorePost ({
+thumbnailSize:200,
+summaryLength:300
+});</pre>
+	<table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Property</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>thumbnailSize</td>
+                                            <td>Define the post thumbnail size</td>
+                                        </tr>
+                                        <tr>
+                                            <td>summaryLength</td>
+                                            <td>Define the summary length</td>
+                                        </tr> 
+										<tr>
+                                            <td>MoreText</td>
+                                            <td>Load more text to display: default: &quot;Load more posts&quot;</td>
+                                        </tr> 										
+                                     
+                                    </tbody>
+                                </table> 
+<p class="note">image size and summary length on summary script and Load more script must have same value</p>								
+                                    </li>
+                                </ol>
+								
+                            </div>
+                            
+							</div>													
+                       <div class="page-header"><h2 id="pagenavi">PageNavi</h2></div>
+                        <div class="row">
+                            <div class="span6">
+							<img class="img-polaroid" src="assets/Adamzpagi.png" />                               
+                            </div>
+                            <div class="span6">
+							To change Load More Post ajax With Page Navigation follow this step<br/> 
+                                <ol>
+                                    <li>On Blogger Dashbord Click <strong class="template">Template</strong></li>
+						 <li>Click <strong class="buttonx">Edit HTML</strong></li>
+						 <li>Scroll down and Find this Code :<br/><br/>
+									<pre class="prettyprint html">loadMorePost ({
+thumbnailSize:200,
+summaryLength:300
+});</pre>
+Replace with <br/>
+<pre class="prettyprint html">PageNavi ({
+pageCount:6,
+displayPageNum:3
+});</pre>
+
+									</li>									
+                                </ol>								
+								<table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Property</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+										<tr>
+                                            <td>pageCount</td>
+                                            <td>The number of posts per page</td>
+                                        </tr>
+                                        <tr>
+                                            <td>displayPageNum</td>
+                                            <td>Number of page buttons that appear</td>
+                                        </tr>                                        
+                                    </tbody>
+                                </table> 
+								</p>
+                            </div>
+                       </div>
+					   
+					<div class="page-header"><h2 id="recentcommentwidgets">Recent Comments</h2></div>
+                        <div class="row">
+                            <div class="span4">
+							<img class="img-polaroid" src="assets/adamzreccomment.png" />                               
+                            </div>
+                            <div class="span8">
+							To add recent comments widget follow this step<br/> 
+                                <ol>
+                                    <li>on Dashbord Blogger Click <strong class="layout">Layout</strong></li>
+                                    <li>Click <span class="addgadget">Add a Gadget</span></li>
+                                    <li>Choose HTML/Javascript</li>
+									<li>Copy this Code:<br/><br/>
+									<pre class="prettyprint html">&lt;div id=&quot;rcentcomnets&quot;&gt;&lt;/div&gt;
+&lt;script type=&#39;text/javascript&#39;&gt;
+RecentComments();
+&lt;/script&gt;</pre>
+									</li>
+									<li>Click <strong class="buttonorg">Save</strong></li>
+                                </ol>
+								<p>(Default) Complete Javascript to call Recent Comments like this code:
+								<pre class="prettyprint html">RecentComments({
+blogURL:&quot;&quot;,
+numComments:4,
+characters:100,
+id_containrc:&quot;#rcentcomnets&quot;,
+avatarSize:50,
+loadingClass:&quot;loadingxx&quot;,
+Showimage:true,
+defaultAvatar:&quot;http://4.bp.blogspot.com/-AEWksK942OE/UFiyLzXJhiI/AAAAAAAAFKE/jBegaGPClxI/s70/user-anonymous-icon.png&quot;,
+MonthNames:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;Nov&quot;,&quot;Dec&quot;],
+maxfeeds:50,
+adminBlog:&quot;&quot;
+});</pre>
+								<table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Property</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+										<tr>
+                                            <td>blogURL</td>
+                                            <td>Yours blog URL or you can leave it blank to load where this script load.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>numComments</td>
+                                            <td>maximum number of recent comment</td>
+                                        </tr>
+                                        <tr>
+                                            <td>characters</td>
+                                            <td>Number of summary characters to show. if set 0, will not show summary</td>
+                                        </tr>
+                                        <tr>
+                                            <td>id_containrc</td>
+                                            <td>ID of div where the recent comment will be display must add this #, Example: if want to show in &lt;div id=&quot;rcentcomnets&quot;&gt;&lt;/div&gt; write like this &quot;#rcentcomnets&quot;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>avatarSize</td>
+                                            <td>Image thumbnail size/avatar size</td>
+                                        </tr>
+                                        <tr>
+                                            <td>loadingClass</td>
+                                            <td>Class went the recent comment loading.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Showimage</td>
+                                            <td>Show or hide the avatar. Value : true or false</td>
+                                        </tr>
+                                        <tr>
+                                            <td>defaultAvatar</td>
+                                            <td>Backup image if comment author don't have avatar image</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MonthNames</td>
+                                            <td>Format month name</td>
+                                        </tr>
+                                        <tr>
+                                            <td>maxfeeds</td>
+                                            <td>Maximum feed to load</td>
+                                        </tr>
+                                      <tr>
+                                            <td>adminBlog</td>
+                                            <td>Control to show or hide author/admin comment. ex: if you don't want to show your comment, simply just write yours blogger name like this adminBlog:"satank MKR" </td>
+                                        </tr>
+                                    </tbody>
+                                </table> 
+								</p>
+                            </div>
+                       </div>
+                             
+							 <div class="page-header"><h2 id="jsonresultwidget">JSON Search Result</h2></div>
+                        <div class="row">
+                            <div class="span4">
+							<img class="img-polaroid" src="assets/adamzsearchresult.png" />                               
+                            </div>
+                            <div class="span8">
+							To edit JSON Search Result Text you can follow this step<br/> 
+                                <ol>
+                                    <li>On Blogger Dashbord Click <strong class="template">Template</strong></li>
+						 <li>Click <strong class="buttonx">Edit HTML</strong></li>
+						 <li>Scroll down and Find this Code :<br/><br/>
+						 <pre class="prettyprint js">searchxx({summaryLength:100, scrthumbSize:50});</pre></li>
+									<li>If you want to change it. You can see complete default Script below:</li>
+                                </ol>
+								<p>(Default) Complete Javascript to call JSON Search Result like this code:
+								<pre class="prettyprint html">searchxx({
+blogURL:&quot;&quot;,
+srcBlank:&quot;http://1.bp.blogspot.com/-htG7vy9vIAA/Tp0KrMUdoWI/AAAAAAAABAU/e7XkFtErqsU/s1600/grey.gif&quot;,
+findText:&quot;Search results for keyword&quot;,
+NotfindText:&quot;No result!&quot;,
+Showthumb:true,
+LoadingText:&quot;Searching...&quot;,
+summaryLength:100, 
+scrthumbSize:50
+});</pre>
+								<table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Property</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+									<tr>
+                                            <td>blogURL</td>
+                                            <td>Yours blog URL or you can leave it blank to load where this script load.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>srcBlank</td>
+                                            <td>Backup image if post don't have image</td>
+                                        </tr>
+                                        <tr>
+                                            <td>findText</td>
+                                            <td>Sentence if founded post by the keyword</td>
+                                        </tr>
+                                        <tr>
+                                            <td>NotfindText</td>
+                                            <td>Text if no post founded</td>
+                                        </tr>
+										<tr>
+                                            <td>Showthumb</td>
+                                            <td>Show or hide the post thumbnail. Value : true or false</td>
+                                        </tr>                                        
+                                        <tr>
+                                            <td>LoadingText</td>
+                                            <td>Text to show went searching</td>
+                                        </tr>
+                                        <tr>
+                                            <td>summaryLength</td>
+                                            <td>Length of summary characters</td>
+                                        </tr>
+                                        <tr>
+                                            <td>scrthumbSize</td>
+                                            <td>Size of thumbnail image, size in pixel</td>
+                                        </tr>                                        
+                                    </tbody>
+                                </table> 
+								</p>
+                            </div>
+                       </div>
+
+                        <div class="page-header"><h2 id="emoticon">Emoticon</h2></div>
+                        <div class="row">
+                            <div class="span4">
+							<img class="img-polaroid" src="assets/emoticon.png" />                               
+                            </div>
+                            <div class="span8">
+							To edit Emoticon Text you can follow this step<br/> 
+                                <ol>
+                                    <li>On Blogger Dashbord Click <strong class="template">Template</strong></li>
+						 <li>Click <strong class="buttonx">Edit HTML</strong></li>
+						 <li>Scroll down and Find this Code :<br/><br/>
+						 <pre class="prettyprint js">emoticonx({
+emoRange:&quot;#comments p, div.emoWrap&quot;,
+putEmoAbove:&quot;iframe#comment-editor&quot;,
+topText:&quot;Click to see the code!&quot;,
+emoMessage:&quot;To insert emoticon you must added at least one space before the code.&quot;
+});</pre>
+</li>
+									<li>If you want to change it. You can see complete default Script below:</li>
+                                </ol>
+									<table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Property</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+									<tr>
+                                            <td>emoRange</td>
+                                            <td>Where the emoticon will show/work</td>
+                                        </tr>
+                                        <tr>
+                                            <td>putEmoAbove</td>
+                                            <td>Where the emoticon sample will place</td>
+                                        </tr>
+                                        <tr>
+                                            <td>topText</td>
+                                            <td>Sentence below the emoticon sample</td>
+                                        </tr>
+                                        <tr>
+                                            <td>emoMessage</td>
+                                            <td>Sentence below the emoticon sample and alert box</td>
+                                        </tr>										                                        
+                                    </tbody>
+                                </table> 
+								
+                            </div>
+                       </div>
+					   <div class="page-header"><h2 id="newsticker">News Ticker</h2></div>
+                        <div class="row">                           
+							<img class="img-polaroid" src="assets/Adamznewsticker.png" />                       
+                            <br/> 
+							To edit News Ticker Text you can follow this step<br/> 
+                                <ol>
+                                    <li>On Blogger Dashbord Click <strong class="template">Template</strong></li>
+						 <li>Click <strong class="buttonx">Edit HTML</strong></li>
+						 <li>Scroll down and Find this Code :<br/><br/>
+						 <pre class="prettyprint js">NewsTicker();</pre><br/>
+						 (Default) Complete Javascript to call JSON Search Result like this code:<br/>
+						 <pre class="prettyprint js">NewsTicker({
+blogURL:&quot;&quot;,
+MaxPost:4,
+Speed:0.1,
+titleText:&quot;Latest News&quot;						 
+});</pre>
+</li>
+									<li>If you want to change it. You can see complete default Script below:</li>
+                                </ol>
+									<table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Property</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+									<tr>
+                                            <td>blogURL</td>
+                                            <td>Yours blog URL or you can leave it blank to load where this script load</td>
+                                        </tr>
+                                        <tr>
+                                            <td>MaxPost</td>
+                                            <td>Maximum number artikel will show on News Ticker</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Speed</td>
+                                            <td>Speed each artikel efect</td>
+                                        </tr>
+                                        <tr>
+                                            <td>titleText</td>
+                                            <td>News Ticker Title Text</td>
+                                        </tr>										                                        
+                                    </tbody>
+                                </table> 
+								
+                         
+                       </div>
+                        </section>                      
+
+
+                        <section id="theme_customizer">
+                            <div class="page-header"><h3>Theme Customizer</h3></div>
+                            <p>It's Easy to customize this themes. Just Go to Blogger Dashbord and Click <strong class="template">Template</strong> then Click <strong class="buttonorg">Customize</strong> and Click Advanced<br/><br/>
+							<span style="color:red"><strong>NB :</strong> Blogger Customize will work if Blogger Mobile Template <strong>Enabled</strong> before upload this Theme</span><br/>
+After customize yours template you can disable Blogger Mobile Template but it will make Blogger Customize not work<br/>							
+							</p>
+                            <img src="assets/adamzbloggercustomize.png" class="img-polaroid"/> <br/><br/>
+                            <table class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Property</th>
+                                            <th>Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+									<tr>
+                                            <td>Header</td>
+                                            <td>This to Configuration Blog Title and Description Font Type and Color</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Main Color</td>
+                                            <td>This to Configuration Main color like Content Area Color, Menu Color, Button Color</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Post and Widget Color</td>
+                                            <td>This to Configuration Widget Color like Widget Background Color, Border Color, Sidebar Heading Background Color, and Sidebar Text Heading Color</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PageNavi and Readmore Button</td>
+                                            <td>This to Configuration PageNavi Button and Readmore Button like Background color, Border Color and Shadow Color</td>
+                                        </tr>
+										<tr>
+                                            <td>Navigation</td>
+                                            <td>This to Configuration Text Menu Color and Credit Border Top Color </td>
+                                        </tr>
+										<tr>
+                                            <td>Page Background Color</td>
+                                            <td>This to Configuration main body background</td>
+                                        </tr>
+										<tr>
+                                            <td>Text Color</td>
+                                            <td>This to Configuration main text color</td>
+                                        </tr>
+										<tr>
+                                            <td>Link Color</td>
+                                            <td>This to Configuration link color</td>
+                                        </tr>
+										<tr>
+                                            <td>Link Hover Color</td>
+                                            <td>This to Configuration link color when mousein on the link</td>
+                                        </tr>
+										<tr>
+                                            <td>Sidebar Text Color</td>
+                                            <td>This to Configuration sidebar text color</td>
+                                        </tr>
+										<tr>
+                                            <td>Visited Link Color</td>
+                                            <td>This to Configuration color link when it did visited</td>
+                                        </tr>
+										<tr>
+                                            <td>Text Font</td>
+                                            <td>This to Configuration main font type</td>
+                                        </tr>
+										<tr>
+                                            <td>Post Area Heading Font</td>
+                                            <td>This to Configuration Main area Heading font type</td>
+                                        </tr>
+										<tr>
+                                            <td>Sidebar and Footer Heading Font</td>
+                                            <td>This to Configuration Sidebar and Footer Heading font type</td>
+                                        </tr>																			
+                                    </tbody>
+                                </table> 
+                            </section>                     
+                                                           
+
+
+                              
+
+                                       
+                                       <hr />
+
+                                       <div class="goodbye">
+                                        <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+                                    </div>
+
+                                    <hr />
+
+                                    <footer>
+                                        <p>&copy; satankmkr 2013</p>
+                                    </footer>
+
+                                </div>
+                                <!-- ========================= MAIN CONTAINER >> END ========================= -->
+
+
+                                <!-- CHANGELOG >> START -->
+                                <div class="modal hide fade" id="changelog" tabindex="-1" role="dialog" aria-labelledby="changelog-label" aria-hidden="true">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h3 id="changelog-label">Changelog</h3>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <!-- Code Block >> Start -->                   
+                                        <pre>Current version 1.0:
+            <!-- +   Addition
+            ^   Change
+            -   Removed
+            *   Security Fix
+            #   Bug Fix
+            !   Note</pre>
+            <!-- Code Block >> End --> 
+
+            <!-- Code Block >> Start -->                   
+        </pre>
+        <!-- Code Block >> End -->                   
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+<!-- CHANGELOG >> END -->
+
+
+
+<!-- CREDITS >> START -->
+<div class="modal hide fade" id="credits" tabindex="-1" role="dialog" aria-labelledby="credits-label" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="credits-label">Credits</h3>
+    </div>
+    <div class="modal-body">
+        <p>I've used the following images, icons or other files as listed.</p>
+        <h3>JavaScript</h3>
+        <ol>
+		   <li><a href="https://plus.google.com/108949996304093815163/about">JQuery hover event with timeout by Taufik Nurrohman</a></li>		  
+		   <li><a href="https://plus.google.com/108949996304093815163/about">Lightweight `auto read-more` hack for Blogger using `Textarea` by Taufik Nurrohman</a></li>
+		   <li><a href="http://github.com/rhodimus/jQuery-News-Ticker">jQuery News Ticker by Rhodimus </a></li>	
+		   <li><a href="http://www.woothemes.com/flexslider/">jQuery FlexSlider v2.1 by Tyler Smith</a></li>
+		   <li><a href="http://users.tpg.com.au/j_birch/plugins/superfish/">Superfish v1.7.2 by Joel Birch</a></li>
+       </ol>      
+</div>
+<div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+</div>
+</div>
+<!-- CREDITS >> END -->
+
+<!-- loading javascripts -->
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+<!-- init javascripts -->
+<script src="assets/js/init.js"></script>
+
+</body>
+
+</html>
